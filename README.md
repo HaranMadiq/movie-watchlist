@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+Movie Watchlist Application
+Overview
+The Movie Watchlist application allows users to manage a list of movies they want to watch. Users can add, edit, delete movies, mark movies as watched or unwatched, and rate and review movies. This README provides instructions for setting up and using the application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Add Movies: Add new movies to your watchlist with details like title, description, release year, and genre.
+Edit Movies: Modify details of existing movies in your watchlist.
+Delete Movies: Remove movies from your watchlist.
+Mark as Watched/Unwatched: Toggle the watched status of movies.
+Rate and Review Movies: Provide ratings and reviews for movies.
+Technologies Used
+Frontend: React.js, Redux, Bootstrap (optional for styling)
+Backend: Node.js, Express.js
+Database: MongoDB
+Prerequisites
+Before running the application, make sure you have the following installed:
 
-## Available Scripts
+Node.js
+MongoDB
+Getting Started
+Backend Setup
+Clone the repository:
+git clone <repository-url>
+cd movie-watchlist
+Install dependencies:
 
-In the project directory, you can run:
+bash
+Copy code
+cd backend
+npm install
+Set up MongoDB:
 
-### `npm start`
+Ensure MongoDB is installed and running locally or provide a MongoDB connection URI in backend/config/db.js.
+Start the backend server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm start
+The server should run on http://localhost:5000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Frontend Setup
+Install dependencies:
 
-### `npm test`
+bash
+Copy code
+cd ..
+npm install
+Start the frontend development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+npm start
+The React application should run on http://localhost:3000.
 
-### `npm run build`
+Usage
+Open your web browser and go to http://localhost:3000 to use the Movie Watchlist application.
+Add, edit, delete movies, mark them as watched or unwatched, and rate and review movies as desired.
+Folder Structure
+php
+Copy code
+movie-watchlist/
+├── backend/              # Backend server files
+│   ├── config/           # Configuration files (e.g., MongoDB setup)
+│   ├── controllers/      # Route controllers
+│   ├── models/           # MongoDB models (e.g., Movie schema)
+│   ├── routes/           # API routes
+│   └── app.js            # Express application setup
+├── public/               # Public assets and index.html
+└── src/                  # Frontend React application
+    ├── actions/          # Redux actions
+    ├── components/       # React components
+    ├── reducers/         # Redux reducers
+    ├── api.js            # API functions (Axios)
+    ├── App.js            # Main application component
+    ├── index.js          # React DOM rendering
+    └── ...
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acknowledgments
+Include any credits or acknowledgments for libraries, frameworks, or tutorials used in the project.
